@@ -1,0 +1,6 @@
+site_name: Language styles
+
+site_url: https://WNHS-Safety-and-Quality.github.io/language-styles
+theme:
+  name: material
+

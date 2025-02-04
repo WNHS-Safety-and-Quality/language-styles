@@ -5,6 +5,11 @@ theme:
   name: material
 
 
+nav:
+  - "C#":
+    - Implicitly-typed local variables: "csharp/var.md"
+    - Et cetera: "csharp/etc.md"
+
 
 markdown_extensions:
   - pymdownx.highlight:

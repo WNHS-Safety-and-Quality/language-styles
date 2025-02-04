@@ -1,13 +1,12 @@
-# C\#
+# Implicitly-typed local variables
 
-## Implicitly-typed local variables
 The `var` keyword allows the compiler to infer the variable's type.
 One should keep in mind:
 
 - Is the type clear given the context?
 - Should emphasis be given to a types nullability?
 
-### Examples of when to use `var`
+## Examples of when to use `var`
 A good reason is to improve readability. Without `var`, declarations are more verbose.
 Multiple verbose delcarations can hurt readability.
 
@@ -34,8 +33,8 @@ if (content == null)
 ```
 
 
-### When to avoid `var`
-#### Example 2
+## When to avoid `var`
+### Example 2
 
 Suppose we declare a variable; `organization`, and assign it to another variable.
 ```csharp
@@ -44,7 +43,7 @@ var organization = response.Content;
 Depending on the context, `organization` could represent a `class` with properties like
 Address, CEO, and PhoneNumber; or `organization` could be a `string`, representing the organisation's name.
 
-Well-written the context ought to be obvious. But failing this what other
+Well-written, the context ought to be obvious. But failing this what other
 options exist?
 
 - We could rename the variable to `organizationName`.
@@ -52,7 +51,7 @@ options exist?
 
 
 
-#### Example 3
+### Example 3
 
 Suppose a variable's 'null state' determines some kind of logic.
 
